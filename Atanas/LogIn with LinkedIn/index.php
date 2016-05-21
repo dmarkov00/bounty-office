@@ -14,30 +14,35 @@ session_start();
 <?php
 if(isset($_SESSION["loggedin_user_id"]) && !empty($_SESSION["user"])) 
 {
-	$user = $_SESSION["user"];
+    header('Location:http://localhost/dashboard/secondpage.php');
+	$user = $_SESSION["user"]; 
+       $_SESSION["user_name"] = $user->formattedName;
+    $_SESSION["user_id"] = $user->id;
+ 
+
 	?>
-	<div class="login-form">
+	<!-- <div class="login-form">
         <div class="head">
-            <img src="<?php echo $user->pictureUrl; ?>" alt=""/>
+            <img src="<?php //echo $user->pictureUrl; ?>" alt=""/>
             
         </div>
         <form>
         <li>
-            <p><?php echo $user->formattedName; ?></p>
+            <p><?php //echo $user->formattedName; ?></p>
         </li>
         <li>
-            <p><?php echo $user->emailAddress; ?></p>
+            <p><?php //echo $user->emailAddress; ?></p>
         </li>
         <li>
-            <p><?php echo $user->location->name; ?></p>
+            <p><?php //echo $user->location->name; ?></p>
         </li>
         <div class="p-container">
             <a href="logout.php" class="logout">Logout</a>
-            <a href="<?php echo $user->publicProfileUrl; ?>" target="_blank" class="profile">View Profile</a>
+            <a href="<?php //echo $user->publicProfileUrl; ?>" target="_blank" class="profile">View Profile</a>
             <div class="clear"> </div>
         </div>
         </form>
-	</div>
+	</div> -->
 	<?php
 }else{
 		
