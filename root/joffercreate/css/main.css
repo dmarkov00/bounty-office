@@ -1,0 +1,38 @@
+#part1{
+    padding-bottom: 20pt;
+    border-bottom: 1px #9d9d9d solid;
+    margin-bottom: 20pt;
+}
+.sectionName{
+    padding-bottom: 20pt;
+}
+.contbox input{
+    margin-bottom: 10pt;
+}
+.inputhalf{
+    display: block;
+    width: 50%;
+}
+.inputfull{
+    display: block;
+    width: 100%;
+    height: 45pt;
+    vertical-align: top;
+}
+.inpsm{
+    height: 30pt;
+}
+.leftwidth{
+    width: 100%;
+}
+
+.additional{
+    margin-bottom: 10pt;
+}
+
+.btn{
+    border: none;
+    font-family: mainfont;
+    font-size: 14pt;
+    width: 120pt;
+}

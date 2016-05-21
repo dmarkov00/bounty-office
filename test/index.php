@@ -3,9 +3,10 @@
     <body>
         <div class="row">
             <form action="input.php" method="post">
-    <label>Job Title :</label> <input type="text" name="job_title" id="inputJob1"> <br>
+				<p>Job Title :</p> 
+				<input type="text" name="job_title" id="inputJob1"> <br>
     <label>Category:</label> <input type="text" name="category" id="catInput2"> <br>
-            <label>Area:</label> <input type="text" name="area" id="area3"><br>
+            <p>Area:</p> <input type="text" name="area" id="area3"><br>
             <label>Skills: </label> <input type="text" name="skills" id="skills4"> <br>
             <label>Language: </label> <input type="text" name="lang" id="lang5"> <br>
             <label>Reward: </label> <input type="number" name="reward" id="rew6" min="0"> <br>

@@ -1,3 +1,5 @@
+
+
 <nav class="navbar navbar-inverse">
   <div class="header container-fluid">
     <div class="navbar-header">
@@ -10,8 +12,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#">Job Offers</a></li>
-        <li><a href="#">Your Entries</a></li>
+        <li><a href="../dashboard">Discover</a></li>
+        <li><a href="../joffercreate">Publish</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
