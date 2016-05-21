@@ -1,7 +1,9 @@
 <?php
-    $pageDes = "Reference your friends";
+    require_once '../default/php/dbconfig.php';
+    require_once '../default/php/convar.php';
+    require_once 'php/getOneOffer.php';
+    $pageDes ="";
 ?>
-
 <html>
 
 <head>
@@ -19,7 +21,9 @@
 
 <body>
 <?php require '../default/pageparts/topBar.php'; 
-        ?>  
+    echo print_r($jobofdesc);
+
+?>  
     
     
     
