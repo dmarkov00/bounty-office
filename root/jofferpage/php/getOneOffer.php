@@ -1,14 +1,16 @@
 <?php
-    require_once '../../default/php/convar.php';
     $stmt=$db_con->prepare( 'SELECT j.job_title, j.category, 
                                 j.area, j.language,
-                                j.reward, j.job_id
+                                j.skills,
+                                j.reward, j.job_id,
+                                j.experience, j.education,
+                                j.projdesc
                                 
                           FROM joboffer j
                           where j.job_id = :id;');
 
     $stmt->execute([
-            ':id' => $offer_id,
+            ':id' => $_SESSION['id'],
         ]);
     $jobofdesc = array();
     if($stmt->rowCount() > 0){
@@ -16,7 +18,7 @@
         {
             extract($row);
             
-            array_push($jobs,$job_title,$category,$area,$language,$reward,$job_id);
+            array_push($jobofdesc,$job_title,$category,$area,$language,$skills,$reward,$job_id,$experience,$education,$projdesc);
         }
     }
 ?>

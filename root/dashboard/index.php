@@ -24,7 +24,7 @@
     <?php require '../default/pageparts/topBar.php'; 
     ?> 
     
-    <div id="contents" class="row container-fluid">
+    <div id="first" class=" contents row container-fluid">
         <div class="col-md-3">
             
         </div> 

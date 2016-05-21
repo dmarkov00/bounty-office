@@ -20,7 +20,7 @@
 <body>
 <?php require '../default/pageparts/topBar.php'; 
         ?>  
-    <div id="position_container" class="container-fluid">
+    <div id="first" class="position_container container-fluid">
         <div class="col-md-6 col-md-offset-3">
             <form action="php/input.php" method="post">
             <div id="part1" class="contbox">
