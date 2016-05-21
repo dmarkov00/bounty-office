@@ -1,7 +1,8 @@
 <?php
 
 
-    $pageDes 
+    $pageDes;
+    $offer_id;
         
         
         
