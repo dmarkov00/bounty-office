@@ -5,9 +5,27 @@
     padding-top: 20pt !important;
 }
 #jobhead{
-    border-bottom: 1px #706F6F solid;
+
 }
 
 #jobreq{
+
+    padding-top: 10pt;
+}
+.txttxt{
     border-bottom: 1px #706F6F solid;
 }
+.lbl{
+    font-style: oblique;
+    display: inline-block;
+    margin-right: 5pt;
+}
+#jobreq *{
+    font-size: 12pt;
+    padding-bottom: 10pt;
+}
+.projdes{
+    font-size: 16pt !important;
+}
+
+

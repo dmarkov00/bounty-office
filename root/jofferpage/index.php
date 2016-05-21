@@ -5,8 +5,7 @@ session_start();
     require_once '../default/php/convar.php';
     $pageDes = "";
     
-echo print_r($jobofdesc);
-       echo $_SESSION['id'];
+
 ?>
 <html>
 
@@ -31,14 +30,33 @@ echo print_r($jobofdesc);
         <div id="jobhead" class="row">
             <div class="col-md-8 col-md-offset-1">
                 <h1><?php echo $jobofdesc[0] ?></h1>
-                <p>Category: <?php echo $jobofdesc[1] ?></p>
+                <p class="projdes">Category: <?php echo $jobofdesc[1] ?></p>
             </div>
-            <div class="col-md-2">
+            <div lass="col-md-1 rightpart">
                 <h1 class="reward">&euro; <?php echo $jobofdesc[5] ?>,- </h1>
+                <div class="viewbtn">
+                    <!-- <h3 class="text resbtntext">RESERVE</h3> -->
+                    <button type="submit" class="btn text resbtntext">Apply</button>
+                </div>
             </div>
         </div>
         <div id="jobreq" class="row">
-            
+            <div class="col-md-4 col-md-offset-1">
+                <h3 class="txttxt">Project Details:</h3>
+                <p class="projdes"><?php echo $jobofdesc[9] ?></p>
+                <h5 class="lbl">Language: </h5><p class="lbl"><?php echo $jobofdesc[3] ?></p>
+                <br>
+                <h5 class="lbl">Experience: </h5><p class="lbl"><?php echo $jobofdesc[7] ?></p>
+                <br>
+                <h5 class="lbl">Location: </h5><p class="lbl"><?php echo $jobofdesc[2] ?></p>
+                <br>
+            </div>
+            <div class="col-md-4">
+                <div>
+                    <h3 class="txttxt">Skills:</h3>
+                    <p class="lbl"><?php echo $jobofdesc[4] ?></p>
+                </div>
+            </div>
         </div>
     </div>
     
