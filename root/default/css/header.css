@@ -2,13 +2,16 @@ nav{
     border: none !important;
     background-color: white !important;
     padding-right: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 nav *{
     color: #706F6F !important;
 }
-#header{
+#pd{
+    margin-bottom: 40pt;
 }
+
 /*
 .dropbtn {
 
