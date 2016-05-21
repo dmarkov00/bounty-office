@@ -11,7 +11,7 @@ class DB
 		$dbServer = 'localhost';
 		$dbUsername = 'root';
 		$dbPassword = '';
-		$dbName = 'codexworld';
+		$dbName = 'bountyoffice';
 		$conn = new mysqli($dbServer,$dbUsername,$dbPassword,$dbName);
 		if($conn){
 			$this->db = $conn;
