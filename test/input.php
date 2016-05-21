@@ -1,6 +1,10 @@
 <?php
+
 session_start();
-require_once 'dbconfig.php';
+require_once 'dbcon.php';
+
+
+
 if($_POST) {
     $job_title = $_POST['job_title'];
     $category = $_POST['category'];
@@ -29,6 +33,7 @@ if($_POST) {
              $stmt->bindParam(":edu",$edu);
     if($stmt->execute()) {
         echo "Successfully added a new job";
+        
     }
     else{
         echo "Query could not execute";

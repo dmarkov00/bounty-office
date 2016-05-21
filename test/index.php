@@ -1,4 +1,5 @@
-<html>  
+<html>
+    <link rel="stylesheet"  href="joboffer.css">
     <body>
         <div class="row">
             <form action="input.php" method="post">
@@ -13,6 +14,31 @@
             <input type="submit" value="Submit new job" name="newjob">
             </form>
             </div>
+        <table>
+            <tr>
+            <th>
+             Job Offer   
+            </th>
+            
+                </tr>
+            <tr>
+                <th>
+                    Job title
+                </th>
+                <td>
+                    <div id="title"></div>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Category
+                </th>
+                <td>
+                    
+                </td>
+            </tr>
+        </table>
+       
 </body>
     
 </html>
